@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201221 19:32:53.895" rpa="false">
+<suite id="s1" name="Validation1TestSuite" source="C:\Users\Leila\test-selenium\ValidationProject\TestCases\Validation1TestSuite.robot">
+<test id="s1-t1" name="TC_001_loginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201221 19:32:54.309" level="INFO">Opening browser 'gc' to base url 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20201221 19:32:54.309" endtime="20201221 19:32:59.353"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201221 19:32:59.354" endtime="20201221 19:33:01.519"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20201221 19:33:01.520" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20201221 19:33:01.520" endtime="20201221 19:33:01.682"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20201221 19:33:01.684" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20201221 19:33:01.755" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20201221 19:33:01.840" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20201221 19:33:01.683" endtime="20201221 19:33:01.840"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20201221 19:33:01.841" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20201221 19:33:01.841" endtime="20201221 19:33:03.032"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>LOGIN</arg>
+</arguments>
+<msg timestamp="20201221 19:33:03.345" level="INFO">Current page does not contain text 'LOGIN'.</msg>
+<status status="PASS" starttime="20201221 19:33:03.034" endtime="20201221 19:33:03.345"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20201221 19:33:03.348" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20201221 19:33:03.347" endtime="20201221 19:33:03.523"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201221 19:33:05.529" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201221 19:33:03.527" endtime="20201221 19:33:05.529"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg timestamp="20201221 19:33:05.530" level="INFO">Clicking link 'link=Logout'.</msg>
+<status status="PASS" starttime="20201221 19:33:05.530" endtime="20201221 19:33:06.100"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201221 19:33:06.101" endtime="20201221 19:33:08.375"></status>
+</kw>
+<status status="PASS" starttime="20201221 19:32:54.307" endtime="20201221 19:33:08.376" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC_002_validationTextField">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201221 19:33:08.380" level="INFO">Opening browser 'gc' to base url 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20201221 19:33:08.380" endtime="20201221 19:33:12.724"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201221 19:33:12.742" endtime="20201221 19:33:14.917"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="SeleniumLibrary">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+</arguments>
+<msg timestamp="20201221 19:33:14.956" level="INFO">Current page contains text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20201221 19:33:14.918" endtime="20201221 19:33:14.956"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20201221 19:33:14.957" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20201221 19:33:14.957" endtime="20201221 19:33:15.085"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="SeleniumLibrary">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+</arguments>
+<msg timestamp="20201221 19:33:15.113" level="INFO">Current page contains text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20201221 19:33:15.086" endtime="20201221 19:33:15.113"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20201221 19:33:15.114" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20201221 19:33:15.163" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20201221 19:33:15.229" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20201221 19:33:15.114" endtime="20201221 19:33:15.229"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20201221 19:33:15.230" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20201221 19:33:15.229" endtime="20201221 19:33:16.474"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>LOGIN</arg>
+</arguments>
+<msg timestamp="20201221 19:33:16.940" level="INFO">Current page does not contain text 'LOGIN'.</msg>
+<status status="PASS" starttime="20201221 19:33:16.508" endtime="20201221 19:33:16.940"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20201221 19:33:16.942" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20201221 19:33:16.941" endtime="20201221 19:33:17.036"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201221 19:33:19.052" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201221 19:33:17.040" endtime="20201221 19:33:19.052"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg timestamp="20201221 19:33:19.058" level="INFO">Clicking link 'link=Logout'.</msg>
+<status status="PASS" starttime="20201221 19:33:19.058" endtime="20201221 19:33:19.586"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201221 19:33:19.589" endtime="20201221 19:33:22.525"></status>
+</kw>
+<status status="PASS" starttime="20201221 19:33:08.379" endtime="20201221 19:33:22.526" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC_003_validationCheckBox">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://login.salesforce.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201221 19:33:22.530" level="INFO">Opening browser 'chrome' to base url 'https://login.salesforce.com/'.</msg>
+<status status="PASS" starttime="20201221 19:33:22.530" endtime="20201221 19:33:26.582"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201221 19:33:26.583" endtime="20201221 19:33:28.744"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=rememberUn</arg>
+</arguments>
+<msg timestamp="20201221 19:33:28.747" level="INFO">Clicking element 'id=rememberUn'.</msg>
+<status status="PASS" starttime="20201221 19:33:28.746" endtime="20201221 19:33:29.018"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201221 19:33:31.026" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201221 19:33:29.019" endtime="20201221 19:33:31.026"></status>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<arguments>
+<arg>id=rememberUn</arg>
+</arguments>
+<msg timestamp="20201221 19:33:31.028" level="INFO">Verifying checkbox 'id=rememberUn' is selected.</msg>
+<status status="PASS" starttime="20201221 19:33:31.027" endtime="20201221 19:33:31.069"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=rememberUn</arg>
+</arguments>
+<msg timestamp="20201221 19:33:31.070" level="INFO">Clicking element 'id=rememberUn'.</msg>
+<status status="PASS" starttime="20201221 19:33:31.070" endtime="20201221 19:33:31.115"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201221 19:33:33.117" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201221 19:33:31.117" endtime="20201221 19:33:33.117"></status>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<arguments>
+<arg>id=rememberUn</arg>
+</arguments>
+<msg timestamp="20201221 19:33:33.118" level="INFO">Verifying checkbox 'id=rememberUn' is not selected.</msg>
+<status status="PASS" starttime="20201221 19:33:33.118" endtime="20201221 19:33:33.151"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201221 19:33:33.151" endtime="20201221 19:33:36.436"></status>
+</kw>
+<status status="PASS" starttime="20201221 19:33:22.529" endtime="20201221 19:33:36.437" critical="yes"></status>
+</test>
+<test id="s1-t4" name="TC_004_validationLoginError">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://login.salesforce.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201221 19:33:36.441" level="INFO">Opening browser 'chrome' to base url 'https://login.salesforce.com/'.</msg>
+<status status="PASS" starttime="20201221 19:33:36.441" endtime="20201221 19:33:40.642"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201221 19:33:40.646" endtime="20201221 19:33:42.845"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>text</arg>
+</arguments>
+<msg timestamp="20201221 19:33:42.855" level="INFO">Typing text 'text' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20201221 19:33:42.853" endtime="20201221 19:33:43.084"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>Abc987</arg>
+</arguments>
+<msg timestamp="20201221 19:33:43.085" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20201221 19:33:43.145" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20201221 19:33:43.213" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20201221 19:33:43.084" endtime="20201221 19:33:43.214"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201221 19:33:45.229" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201221 19:33:43.215" endtime="20201221 19:33:45.229"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=Login</arg>
+</arguments>
+<msg timestamp="20201221 19:33:45.230" level="INFO">Clicking button 'id=Login'.</msg>
+<status status="PASS" starttime="20201221 19:33:45.230" endtime="20201221 19:33:45.561"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201221 19:33:47.577" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201221 19:33:45.562" endtime="20201221 19:33:47.577"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>id=error</arg>
+<arg>Vérifiez votre nom d'utilisateur et votre mot de passe.</arg>
+</arguments>
+<msg timestamp="20201221 19:33:47.609" level="INFO">Element 'id=error' contains text 'Vérifiez votre nom d'utilisateur et votre mot de passe.'.</msg>
+<status status="PASS" starttime="20201221 19:33:47.578" endtime="20201221 19:33:47.609"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201221 19:33:47.610" endtime="20201221 19:33:49.891"></status>
+</kw>
+<status status="PASS" starttime="20201221 19:33:36.440" endtime="20201221 19:33:49.892" critical="yes"></status>
+</test>
+<test id="s1-t5" name="TC_005_validationTitle">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://login.salesforce.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201221 19:33:49.900" level="INFO">Opening browser 'chrome' to base url 'https://login.salesforce.com/'.</msg>
+<status status="PASS" starttime="20201221 19:33:49.899" endtime="20201221 19:33:53.984"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201221 19:33:53.987" endtime="20201221 19:33:56.155"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201221 19:33:58.163" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201221 19:33:56.159" endtime="20201221 19:33:58.163"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Connexion | Salesforce</arg>
+</arguments>
+<msg timestamp="20201221 19:33:58.172" level="INFO">Page title is 'Connexion | Salesforce'.</msg>
+<status status="PASS" starttime="20201221 19:33:58.164" endtime="20201221 19:33:58.172"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" starttime="20201221 19:33:58.173" endtime="20201221 19:33:58.215"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>id=password</arg>
+</arguments>
+<msg timestamp="20201221 19:33:58.252" level="INFO">Element 'id=password' is displayed.</msg>
+<status status="PASS" starttime="20201221 19:33:58.216" endtime="20201221 19:33:58.252"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201221 19:33:58.253" endtime="20201221 19:34:00.513"></status>
+</kw>
+<status status="PASS" starttime="20201221 19:33:49.898" endtime="20201221 19:34:00.514" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201221 19:32:53.897" endtime="20201221 19:34:00.517"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="Validation1TestSuite">Validation1TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

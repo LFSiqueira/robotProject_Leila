@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201221 19:32:25.807" rpa="false">
+<suite id="s1" name="ValidationProject" source="C:\Users\Leila\test-selenium\ValidationProject">
+<suite id="s1-s1" name="TestCases" source="C:\Users\Leila\test-selenium\ValidationProject\TestCases">
+<suite id="s1-s1-s1" name="Validation1TestSuite" source="C:\Users\Leila\test-selenium\ValidationProject\TestCases\Validation1TestSuite.robot">
+<test id="s1-s1-s1-t1" name="TC_005_validationTitle">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://login.salesforce.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201221 19:32:26.250" level="INFO">Opening browser 'chrome' to base url 'https://login.salesforce.com/'.</msg>
+<status status="PASS" starttime="20201221 19:32:26.249" endtime="20201221 19:32:30.345"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201221 19:32:30.346" endtime="20201221 19:32:32.535"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201221 19:32:34.541" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201221 19:32:32.537" endtime="20201221 19:32:34.541"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Connexion | Salesforce</arg>
+</arguments>
+<msg timestamp="20201221 19:32:34.549" level="INFO">Page title is 'Connexion | Salesforce'.</msg>
+<status status="PASS" starttime="20201221 19:32:34.542" endtime="20201221 19:32:34.549"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" starttime="20201221 19:32:34.550" endtime="20201221 19:32:34.598"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>id=password</arg>
+</arguments>
+<msg timestamp="20201221 19:32:34.640" level="INFO">Element 'id=password' is displayed.</msg>
+<status status="PASS" starttime="20201221 19:32:34.599" endtime="20201221 19:32:34.641"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201221 19:32:34.641" endtime="20201221 19:32:36.944"></status>
+</kw>
+<status status="PASS" starttime="20201221 19:32:26.247" endtime="20201221 19:32:36.945" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201221 19:32:25.951" endtime="20201221 19:32:36.946"></status>
+</suite>
+<status status="PASS" starttime="20201221 19:32:25.946" endtime="20201221 19:32:36.950"></status>
+</suite>
+<status status="PASS" starttime="20201221 19:32:25.889" endtime="20201221 19:32:36.953"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="ValidationProject">ValidationProject</stat>
+<stat pass="1" fail="0" id="s1-s1" name="TestCases">ValidationProject.TestCases</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Validation1TestSuite">ValidationProject.TestCases.Validation1TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
