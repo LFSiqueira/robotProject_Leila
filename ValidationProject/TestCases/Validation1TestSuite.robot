@@ -66,3 +66,6 @@ TC_005_validationTitle
     Element Should Be Visible    id=password    
     Close Browser
     
+TC_006_display_simpleTest
+    Log To Console    Bonjour!    
+    
